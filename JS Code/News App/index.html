@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class=" flex main-nav container  ">
+            <a href="#" class="news-logo" onclick="reload()">
+                <img src="./assets/news logo.jpg" alt="News Logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li  class="nav-item hover-link" id="politics" onclick="itemClick('politics')">Politics</li>
+                    <li class="nav-item hover-link" id="social" onclick="itemClick('social')">Social</li>
+                    <li class="nav-item hover-link" id="cricket" onclick="itemClick('cricket')">Cricket</li>
+                    <li class="nav-item hover-link" id="business" onclick="itemClick('business')">Business</li>
+                    <li class="nav-item hover-link" id="entertainment" onclick="itemClick('entertainment')">Entertainment</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="search-box" id="search-box" placeholder="  e.g. Virat Kohli">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://placehold.co/400x200" alt="card" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-source">End Gadget 26/08/2023</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias veritatis sit iusto doloremque, commodi vitae excepturi cum possimus optio?</p>
+            </div>
+        </div>
+
+    </template>   
+    
+</body>
+<script src="index.js"></script>
+</html>
+
